@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="00" translatesAutoresizingMaskIntoConstraints="NO" id="d7i-QA-0wR">
+                                <rect key="frame" x="75" y="134" width="225" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="PXB-IT-cYi"/>
+                                    <constraint firstAttribute="width" constant="225" id="iCz-Ks-JyC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dve-Xq-XP1">
+                                <rect key="frame" x="132" y="564" width="110" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3v6-j7-2Al"/>
+                                    <constraint firstAttribute="width" constant="110" id="nL8-C0-RzK"/>
+                                </constraints>
+                                <state key="normal" title="定制标签">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="EditClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bak-Zd-rHn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YSStickerView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS9-eb-lbR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7XM-gv-OGv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d7i-QA-0wR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Sq-Sb-Xx3"/>
+                            <constraint firstItem="RS9-eb-lbR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="1XS-e8-ejl"/>
+                            <constraint firstItem="d7i-QA-0wR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XWf-Mt-b3B"/>
+                            <constraint firstItem="dve-Xq-XP1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cTM-Ej-Hdf"/>
+                            <constraint firstAttribute="trailing" secondItem="RS9-eb-lbR" secondAttribute="trailing" id="d3w-iR-7to"/>
+                            <constraint firstItem="dve-Xq-XP1" firstAttribute="top" secondItem="d7i-QA-0wR" secondAttribute="bottom" constant="30" id="n22-z2-2Mi"/>
+                            <constraint firstItem="RS9-eb-lbR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nIk-56-sMX"/>
+                            <constraint firstItem="d7i-QA-0wR" firstAttribute="top" secondItem="RS9-eb-lbR" secondAttribute="bottom" constant="20" id="tfQ-Zn-W0p"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tfQ-Zn-W0p"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="stickerImgView" destination="d7i-QA-0wR" id="G12-iz-mAJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509.5" y="349.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="00" width="750" height="1333"/>
+    </resources>
+</document>
